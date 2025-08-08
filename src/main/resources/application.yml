@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: mlb-data-server
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 100
+  datasource:
+    url: jdbc:postgresql://localhost:5432/do_develop?currentSchema=kbo
+    driver-class-name: org.postgresql.Driver
+    username:
+    password:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: INFO
+    org.hibernate.orm.jdbc.bind: INFO
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://localhost:5432/do_develop?currentSchema=kbo
+    driver-class-name: org.postgresql.Driver
+    username:
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+
