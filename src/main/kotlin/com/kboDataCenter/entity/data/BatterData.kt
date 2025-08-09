@@ -1,4 +1,4 @@
-package com.mlbdatacenter.entity.data
+package com.kboDataCenter.entity.data
 
 import java.math.BigDecimal
 

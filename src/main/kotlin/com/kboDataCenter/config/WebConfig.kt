@@ -1,4 +1,4 @@
-package com.mlbdatacenter.config
+package com.kboDataCenter.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

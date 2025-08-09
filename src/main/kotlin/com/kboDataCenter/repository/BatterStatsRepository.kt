@@ -1,6 +1,6 @@
-package com.mlbdatacenter.repository
+package com.kboDataCenter.repository
 
-import com.mlbdatacenter.entity.BatterStats
+import com.kboDataCenter.entity.BatterStats
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

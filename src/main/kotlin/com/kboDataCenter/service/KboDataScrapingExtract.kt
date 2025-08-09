@@ -1,7 +1,7 @@
-package com.mlbdatacenter.service
+package com.kboDataCenter.service
 
-import com.mlbdatacenter.entity.data.BatterData
-import com.mlbdatacenter.entity.data.PitcherData
+import com.kboDataCenter.entity.data.BatterData
+import com.kboDataCenter.entity.data.PitcherData
 import org.jsoup.select.Elements
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component

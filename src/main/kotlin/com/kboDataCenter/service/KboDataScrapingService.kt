@@ -1,18 +1,14 @@
-package com.mlbdatacenter.service
+package com.kboDataCenter.service
 
-import com.mlbdatacenter.entity.*
-import com.mlbdatacenter.entity.data.BatterData
-import com.mlbdatacenter.entity.data.PitcherData
-import com.mlbdatacenter.repository.*
+import com.kboDataCenter.entity.*
+import com.kboDataCenter.entity.data.BatterData
+import com.kboDataCenter.entity.data.PitcherData
+import com.kboDataCenter.repository.*
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import org.jsoup.nodes.Element
-import org.jsoup.select.Elements
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
-import java.math.BigDecimal
-import java.time.LocalDateTime
 
 @Service
 class KboDataScrapingService(

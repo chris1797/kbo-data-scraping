@@ -1,12 +1,12 @@
-package com.mlbdatacenter.entity
+package com.kboDataCenter.entity
 
 import jakarta.persistence.*
 import java.math.BigDecimal
 import java.time.LocalDateTime
 
 @Entity
-@Table(name = "pitcher_stats")
-class PitcherStats(
+@Table(name = "batter_stats")
+class BatterStats(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
@@ -21,53 +21,44 @@ class PitcherStats(
     @Column(nullable = false)
     val team: String,
     
-    @Column(precision = 5, scale = 2)
-    val era: BigDecimal? = null,
+    @Column(precision = 4, scale = 3)
+    val battingAverage: BigDecimal? = null,
     
     @Column
     val games: Int? = null,
     
     @Column
-    val wins: Int? = null,
+    val plateAppearances: Int? = null,
     
     @Column
-    val losses: Int? = null,
-    
-    @Column
-    val saves: Int? = null,
-    
-    @Column
-    val holds: Int? = null,
-    
-    @Column(precision = 5, scale = 3)
-    val winPercentage: BigDecimal? = null,
-    
-    @Column
-    val inningsPitched: String? = null,
-    
-    @Column
-    val hits: Int? = null,
-    
-    @Column
-    val homeRuns: Int? = null,
-    
-    @Column
-    val walks: Int? = null,
-    
-    @Column
-    val hitByPitch: Int? = null,
-    
-    @Column
-    val strikeouts: Int? = null,
+    val atBats: Int? = null,
     
     @Column
     val runs: Int? = null,
     
     @Column
-    val earnedRuns: Int? = null,
+    val hits: Int? = null,
     
-    @Column(precision = 4, scale = 2)
-    val whip: BigDecimal? = null,
+    @Column
+    val doubles: Int? = null,
+    
+    @Column
+    val triples: Int? = null,
+    
+    @Column
+    val homeRuns: Int? = null,
+    
+    @Column
+    val totalBases: Int? = null,
+    
+    @Column
+    val runsBattedIn: Int? = null,
+    
+    @Column
+    val sacrificeBunts: Int? = null,
+    
+    @Column
+    val sacrificeFlies: Int? = null,
     
     @Column(nullable = false)
     val createdAt: LocalDateTime = LocalDateTime.now(),

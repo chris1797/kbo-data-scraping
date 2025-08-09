@@ -1,6 +1,6 @@
-package com.mlbdatacenter.api
+package com.kboDataCenter.api
 
-import com.mlbdatacenter.service.KboDataScrapingService
+import com.kboDataCenter.service.KboDataScrapingService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 

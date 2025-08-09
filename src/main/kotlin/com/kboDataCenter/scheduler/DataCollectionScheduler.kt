@@ -1,6 +1,6 @@
-package com.mlbdatacenter.scheduler
+package com.kboDataCenter.scheduler
 
-import com.mlbdatacenter.service.KboDataScrapingService
+import com.kboDataCenter.service.KboDataScrapingService
 import org.slf4j.LoggerFactory
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component

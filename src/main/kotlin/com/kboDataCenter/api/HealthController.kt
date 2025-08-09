@@ -1,4 +1,4 @@
-package com.mlbdatacenter.api
+package com.kboDataCenter.api
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping

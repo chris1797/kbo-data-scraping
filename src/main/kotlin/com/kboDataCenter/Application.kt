@@ -1,4 +1,4 @@
-package com.mlbdatacenter
+package com.kboDataCenter
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

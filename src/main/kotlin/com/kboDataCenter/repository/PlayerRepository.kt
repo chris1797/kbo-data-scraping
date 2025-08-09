@@ -1,7 +1,7 @@
-package com.mlbdatacenter.repository
+package com.kboDataCenter.repository
 
-import com.mlbdatacenter.entity.Player
-import com.mlbdatacenter.entity.PlayerPosition
+import com.kboDataCenter.entity.Player
+import com.kboDataCenter.entity.PlayerPosition
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
