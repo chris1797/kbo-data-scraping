@@ -6,6 +6,9 @@ import java.math.BigDecimal
 @Component
 class commonUtil {
 
+    /**
+     * 문자열을 정수로 변환
+     */
     fun parseInt(value: String): Int? {
         return try {
             value.trim().replace("-", "0").toInt()
