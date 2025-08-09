@@ -1,4 +1,4 @@
-package com.kboDataCenter.entity.data
+package com.kboDataCenter.entity.dto.data
 
 import java.math.BigDecimal
 

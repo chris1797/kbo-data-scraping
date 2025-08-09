@@ -1,7 +1,7 @@
 package com.kboDataCenter.service
 
-import com.kboDataCenter.entity.data.BatterData
-import com.kboDataCenter.entity.data.PitcherData
+import com.kboDataCenter.entity.dto.data.BatterData
+import com.kboDataCenter.entity.dto.data.PitcherData
 import org.jsoup.select.Elements
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component

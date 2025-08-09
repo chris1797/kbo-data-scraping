@@ -1,8 +1,8 @@
 package com.kboDataCenter.service
 
 import com.kboDataCenter.entity.*
-import com.kboDataCenter.entity.data.BatterData
-import com.kboDataCenter.entity.data.PitcherData
+import com.kboDataCenter.entity.dto.data.BatterData
+import com.kboDataCenter.entity.dto.data.PitcherData
 import com.kboDataCenter.repository.*
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
@@ -97,7 +97,10 @@ class KboDataScrapingService(
         
         return
     }
-    
+
+    /**
+     * 주어진 URL에서 HTML 문서를 가져옴
+     */
     private fun getDocument(url: String): Document {
         return Jsoup.connect(url)
             .userAgent(USER_AGENT)
