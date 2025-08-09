@@ -11,23 +11,8 @@ class KboPitcherService(
     private val pitcherStatsRepository: PitcherStatsRepository
 ) {
 
-
     fun getPitcherList(pageable: Pageable): Page<PitcherDto> {
-        return pitcherStatsRepository.findAllWithPlayer(pageable).map { pitcher ->
-            PitcherDto(
-                id = pitcher.id,
-                player = pitcher.player,
-                team = pitcher.team,
-                era = pitcher.era,
-                wins = pitcher.wins,
-                losses = pitcher.losses,
-                saves = pitcher.saves,
-                strikeouts = pitcher.strikeouts,
-                walks = pitcher.walks,
-                hits = pitcher.hits,
-                inningsPitched = pitcher.inningsPitched
-            )
-        }
-
+        return pitcherStatsRepository.findAllWithPlayer(pageable)
+            .map { pitcher -> PitcherDto.fromEntity(pitcher) }
     }
 }

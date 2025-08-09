@@ -1,5 +1,6 @@
 package com.kboDataCenter.entity
 
+import com.kboDataCenter.entity.dto.response.PitcherDto
 import jakarta.persistence.*
 import java.math.BigDecimal
 import java.time.LocalDateTime
@@ -78,5 +79,23 @@ class PitcherStats(
     @PreUpdate
     fun preUpdate() {
         updatedAt = LocalDateTime.now()
+    }
+
+    companion object {
+        fun toDto(pitcherStats: PitcherStats): PitcherDto {
+            return PitcherDto(
+                id = pitcherStats.id,
+                player = pitcherStats.player,
+                team = pitcherStats.team,
+                era = pitcherStats.era,
+                wins = pitcherStats.wins,
+                losses = pitcherStats.losses,
+                saves = pitcherStats.saves,
+                strikeouts = pitcherStats.strikeouts,
+                walks = pitcherStats.walks,
+                hits = pitcherStats.hits,
+                inningsPitched = pitcherStats.inningsPitched
+            )
+        }
     }
 }

@@ -40,6 +40,7 @@ data class PitcherDto(
             return PitcherDto(
                 id = entity.id,
                 season = entity.season,
+                player = entity.player,
                 team = entity.team,
                 era = entity.era,
                 games = entity.games,
@@ -49,13 +50,6 @@ data class PitcherDto(
                 holds = entity.holds,
                 winPercentage = entity.winPercentage,
                 inningsPitched = entity.inningsPitched.toString(),
-                hits = entity.hits,
-                homeRuns = entity.homeRuns,
-                walks = entity.walks,
-                hitByPitch = entity.hitByPitch,
-                strikeouts = entity.strikeouts,
-                runs = entity.runs,
-                earnedRuns = entity.earnedRuns,
                 whip = entity.whip,
             )
 
